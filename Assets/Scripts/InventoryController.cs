@@ -9,25 +9,39 @@ public class InventoryController : MonoBehaviour {
     public int currentItem;
     public GameObject currentItemImage;
     public GameObject inventoryUI;
+	public GameObject inventoryHL;
 
-    void Start () {
-	
-	}
+	public List<GameObject> inventoryUIitems;
 	
 	void Update () {
+		
         UseItem();
         DropItem();
         ChangeItem();
+
+		if (currentItem != 0) {
+			inventoryHL.GetComponent<Image> ().enabled = true;
+			inventoryHL.transform.position = inventoryUIitems [currentItem].transform.position;
+		} else if (inventoryUIitems.Count > 0) {
+			inventoryHL.GetComponent<Image> ().enabled = true;
+			inventoryHL.transform.position = inventoryUIitems [0].transform.position;
+		} else {
+			inventoryHL.GetComponent<Image> ().enabled = false;
+		}
+
 
     }
     public void AddItem(GameObject newItem)
     {
         Debug.Log("item added to inventory");
         theInventory.Add(newItem);
-        GameObject tempImage = (GameObject)Instantiate(currentItemImage);
-        tempImage.transform.SetParent(inventoryUI.transform);
-        tempImage.GetComponentInChildren<Image>().sprite = newItem.GetComponent<isItem>().itemImage;
-        newItem.GetComponent<isItem>().itemsImageGameObject = tempImage;
+		GameObject tempItem = (GameObject)Instantiate(currentItemImage);
+		inventoryUIitems.Add (tempItem);
+        tempItem.transform.SetParent(inventoryUI.transform);
+        tempItem.GetComponentInChildren<Image>().sprite = newItem.GetComponent<isItem>().itemImage;
+        newItem.GetComponent<isItem>().itemsImageGameObject = tempItem;
+
+		currentItem = theInventory.Count - 1;
     }
 
     public void UseItem() {
@@ -42,9 +56,11 @@ public class InventoryController : MonoBehaviour {
         if (Input.GetButtonDown("DropItem") && theInventory.Count > 0)
         {
             Debug.Log("item removed");
-            Destroy(theInventory[currentItem].GetComponent<isItem>().itemsImageGameObject);
+			Destroy(inventoryUIitems[currentItem].gameObject);
+			inventoryUIitems.RemoveAt (currentItem);
+
             Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, transform.position,transform.rotation);
-            theInventory.Remove(theInventory[currentItem]);
+			theInventory.RemoveAt(currentItem);
             if (currentItem > 0)
             {
                 currentItem--;
@@ -56,13 +72,13 @@ public class InventoryController : MonoBehaviour {
     {
         if (Input.GetButtonDown("ChangeItem"))
         {
+			currentItem++;
             Debug.Log("item changed");
-            if (currentItem > theInventory.Count)
+            if (currentItem >= theInventory.Count)
             {
                 currentItem = 0;
             }
-            currentItem++;
-            //currentItemImage.sprite = theInventory[currentItem].GetComponent<isItem>().itemImage;
+
         }
     }
 }
