@@ -7,7 +7,8 @@ public class InventoryController : MonoBehaviour {
     
     public List<GameObject> theInventory;
     public int currentItem;
-    public Image currentItemImage;
+    public GameObject currentItemImage;
+    public GameObject inventoryUI;
 
     void Start () {
 	
@@ -23,7 +24,10 @@ public class InventoryController : MonoBehaviour {
     {
         Debug.Log("item added to inventory");
         theInventory.Add(newItem);
-        currentItemImage.sprite = theInventory[currentItem].GetComponent<isItem>().itemImage;
+        GameObject tempImage = (GameObject)Instantiate(currentItemImage);
+        tempImage.transform.SetParent(inventoryUI.transform);
+        tempImage.GetComponentInChildren<Image>().sprite = newItem.GetComponent<isItem>().itemImage;
+        newItem.GetComponent<isItem>().itemsImageGameObject = tempImage;
     }
 
     public void UseItem() {
@@ -35,11 +39,16 @@ public class InventoryController : MonoBehaviour {
 
     public void DropItem()
     {
-        if (Input.GetButtonDown("DropItem"))
+        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0)
         {
             Debug.Log("item removed");
+            Destroy(theInventory[currentItem].GetComponent<isItem>().itemsImageGameObject);
             Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, transform.position,transform.rotation);
             theInventory.Remove(theInventory[currentItem]);
+            if (currentItem > 0)
+            {
+                currentItem--;
+            }
         }
     }
 
@@ -53,6 +62,7 @@ public class InventoryController : MonoBehaviour {
                 currentItem = 0;
             }
             currentItem++;
+            //currentItemImage.sprite = theInventory[currentItem].GetComponent<isItem>().itemImage;
         }
     }
 }

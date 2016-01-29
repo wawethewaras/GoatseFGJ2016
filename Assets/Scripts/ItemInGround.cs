@@ -11,7 +11,8 @@ public class ItemInGround : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    void OnMouseOver()
+    {
         if (Input.GetMouseButtonDown(0))
         {
             theInventoryController.AddItem(item);
