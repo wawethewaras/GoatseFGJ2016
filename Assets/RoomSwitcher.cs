@@ -11,32 +11,51 @@ public class RoomSwitcher : MonoBehaviour {
 	public Button leftButton;
 	public Button rightButton;
 
-	public void MoveUp(){
-		GameObject pRoom = currentRoom.GetComponent<Room> ().roomUp;
-		Camera.main.transform.position = new Vector3(pRoom.transform.position.x, pRoom.transform.position.y, Camera.main.transform.position.z);
-		currentRoom = currentRoom.GetComponent<Room> ().roomUp;
+
+	public void ChangeRoom(string room){
+		GameObject pRoom = null;
+
+		if (room == "left") {
+			pRoom = currentRoom.GetComponent<Room> ().roomLeft;
+		} else if (room == "right") {
+			pRoom = currentRoom.GetComponent<Room> ().roomRight;
+		} else if (room == "up") {
+			pRoom = currentRoom.GetComponent<Room> ().roomUp;
+		} else if (room == "down") {
+			pRoom = currentRoom.GetComponent<Room> ().roomDown;
+		}
+
+		Camera.main.transform.position = new Vector3 (pRoom.transform.position.x, pRoom.transform.position.y, Camera.main.transform.position.z);
+		currentRoom = pRoom;
+
+		CheckButtons ();
+		
 	}
 
-	public void MoveDown(){
-		GameObject pRoom = currentRoom.GetComponent<Room> ().roomDown;
-		Camera.main.transform.position = new Vector3(pRoom.transform.position.x, pRoom.transform.position.y, Camera.main.transform.position.z);
-		currentRoom = currentRoom.GetComponent<Room> ().roomDown;
-	}
+	public void CheckButtons(){
+		if (currentRoom.GetComponent<Room> ().roomDown == null) {
+			downButton.gameObject.SetActive(false);
+		} else {
+			downButton.gameObject.SetActive(true);
+		}
 
-	public void MoveLeft(){
-		GameObject pRoom = currentRoom.GetComponent<Room> ().roomLeft;
-		Camera.main.transform.position = new Vector3(pRoom.transform.position.x, pRoom.transform.position.y, Camera.main.transform.position.z);
-		currentRoom = currentRoom.GetComponent<Room> ().roomLeft;
-	}
+		if (currentRoom.GetComponent<Room> ().roomUp == null) {
+			upButton.gameObject.SetActive(false);
+		} else {
+			upButton.gameObject.SetActive(true);
+		}
 
-	public void MoveRight(){
-		GameObject pRoom = currentRoom.GetComponent<Room> ().roomRight;
-		Camera.main.transform.position = new Vector3(pRoom.transform.position.x, pRoom.transform.position.y, Camera.main.transform.position.z);
-		currentRoom = currentRoom.GetComponent<Room> ().roomRight;
-	}
+		if (currentRoom.GetComponent<Room> ().roomRight == null) {
+			rightButton.gameObject.SetActive(false);
+		} else {
+			rightButton.gameObject.SetActive(true);
+		}
 
-	public void ChangeRoom(GameObject room){
-		currentRoom = room;
+		if (currentRoom.GetComponent<Room> ().roomLeft == null) {
+			leftButton.gameObject.SetActive(false);
+		} else {
+			leftButton.gameObject.SetActive(true);
+		}
 	}
 
 }
