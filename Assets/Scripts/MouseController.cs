@@ -6,10 +6,10 @@ public class MouseController : MonoBehaviour {
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
-    public string selectedItem;
+    public string mouseState;
 
     void Start () {
-        selectedItem = "Empty";
+        mouseState = "Empty";
 
     }
 	
@@ -22,7 +22,7 @@ public class MouseController : MonoBehaviour {
     public void ChangeCursorImage() {
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
     }
-    void ReturnCursorImage() {
+    public void ReturnCursorImage() {
         Cursor.SetCursor(null, Vector2.zero, cursorMode);
     }
 }

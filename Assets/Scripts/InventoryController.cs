@@ -10,9 +10,14 @@ public class InventoryController : MonoBehaviour {
     public GameObject currentItemImage;
     public GameObject inventoryUI;
 	public GameObject inventoryHL;
+    MouseController theMouseController;
+    public List<GameObject> inventoryUIitems;
 
-	public List<GameObject> inventoryUIitems;
-	
+    bool isUsingItem;
+
+    void Start() {
+        theMouseController = FindObjectOfType<MouseController>();
+    }
 	void Update () {
 		
         UseItem();
@@ -45,9 +50,19 @@ public class InventoryController : MonoBehaviour {
     }
 
     public void UseItem() {
-        if (Input.GetButtonDown("UseItem"))
+        if (Input.GetButtonDown("UseItem") && !isUsingItem)
         {
             Debug.Log("item used");
+            theMouseController.mouseState = theInventory[currentItem].GetComponent<isItem>().mouseState;
+            //theMouseController.ChangeCursorImage();
+            isUsingItem = true;
+        }
+        else if (Input.GetButtonDown("UseItem") && isUsingItem)
+        {
+            Debug.Log("item cancelled");
+            theMouseController.mouseState = "Empty";
+            //theMouseController.ReturnCursorImage();
+            isUsingItem = false;
         }
     }
 
