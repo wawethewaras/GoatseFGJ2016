@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class isObject : MonoBehaviour {
 
@@ -21,8 +22,10 @@ public class isObject : MonoBehaviour {
         {
             ItemCursor.current.EnableInfo(itemInfo);
         }
-            if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState == itemThatActivates)
-        {
+
+
+        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState == itemThatActivates)
+    	{
             ItemCursor.current.RemoveItem();
 
 			if (gameObject.name == "Skull") {
@@ -32,6 +35,10 @@ public class isObject : MonoBehaviour {
             {
                 OpenDoor();
             }
+			print (name);
+			if (gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4") {
+				CandleLightingGame.current.LightCandle (gameObject);
+			}
         }
     }
 
@@ -61,4 +68,5 @@ public class isObject : MonoBehaviour {
     {
         ItemCursor.current.ReturnCursor();
     }
+
 }

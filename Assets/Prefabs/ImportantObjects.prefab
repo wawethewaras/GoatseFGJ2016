@@ -267,6 +267,7 @@ GameObject:
   - 114: {fileID: 11462770}
   - 114: {fileID: 11493432}
   - 114: {fileID: 11482938}
+  - 114: {fileID: 11477310}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -496,7 +497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &166916
 GameObject:
   m_ObjectHideFlags: 1
@@ -2120,6 +2121,25 @@ MonoBehaviour:
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
+--- !u!114 &11477310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355bd4be8e27045ba8b78fd1ee47ac95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candlesLit: 0
+  litCandlesList: []
+  correctCandleOrder:
+  - candle
+  - candle1
+  - candle2
+  - candle3
+  - candle4
 --- !u!114 &11478076
 MonoBehaviour:
   m_ObjectHideFlags: 1

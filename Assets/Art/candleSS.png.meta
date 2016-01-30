@@ -1,12 +1,13 @@
 fileFormatVersion: 2
 guid: 1e809962704424260b904e2a7b43a611
-timeCreated: 1454164355
+timeCreated: 1454188732
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: candleSS_0
     21300002: candleSS_1
     21300004: candleSS_2
+    21300006: candleSS_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,78 +59,97 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 457
-        width: 60
+        width: 50
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 13, y: -147}
-        - {x: 11, y: -149}
-        - {x: 11, y: -150}
-        - {x: 14, y: -153}
-        - {x: 22, y: -153}
-        - {x: 24, y: -151}
-        - {x: 24, y: -149}
-        - {x: 22, y: -147}
-      - - {x: 4, y: 135}
-        - {x: -8, y: 134}
-        - {x: -30, y: 84}
-        - {x: -30, y: -140}
-        - {x: -11, y: -152}
-        - {x: 16, y: -152}
-        - {x: 28, y: -146}
-        - {x: 28, y: 135}
+      - - {x: 16, y: -149}
+        - {x: 16, y: -150}
+        - {x: 19, y: -153}
+        - {x: 25, y: -153}
+        - {x: 25, y: -147}
+        - {x: 18, y: -147}
+      - - {x: -1, y: 135}
+        - {x: -25, y: 99}
+        - {x: -25, y: -143}
+        - {x: -6, y: -152}
+        - {x: 15, y: -152}
+        - {x: 25, y: -146}
+        - {x: 25, y: 135}
     - name: candleSS_1
       rect:
         serializedVersion: 2
         x: 350
         y: 457
-        width: 60
+        width: 50
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 13, y: -147}
-        - {x: 11, y: -149}
-        - {x: 11, y: -150}
-        - {x: 14, y: -153}
-        - {x: 22, y: -153}
-        - {x: 24, y: -151}
-        - {x: 24, y: -149}
-        - {x: 22, y: -147}
-      - - {x: 28, y: 128}
-        - {x: -22, y: 128}
-        - {x: -30, y: 126}
-        - {x: -30, y: -152}
-        - {x: 28, y: -152}
+      - - {x: 16, y: -149}
+        - {x: 16, y: -150}
+        - {x: 19, y: -153}
+        - {x: 25, y: -153}
+        - {x: 25, y: -147}
+        - {x: 18, y: -147}
+      - - {x: 22, y: 80}
+        - {x: 21, y: 114}
+        - {x: 10, y: 128}
+        - {x: -18, y: 128}
+        - {x: -18, y: 97}
+        - {x: -25, y: 63}
+        - {x: -25, y: -141}
+        - {x: -5, y: -152}
+        - {x: 13, y: -152}
+        - {x: 25, y: -144}
+        - {x: 25, y: 56}
+        - {x: 22, y: 57}
     - name: candleSS_2
       rect:
         serializedVersion: 2
         x: 700
         y: 457
-        width: 60
+        width: 50
         height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 13, y: -147}
-        - {x: 11, y: -149}
-        - {x: 11, y: -150}
-        - {x: 14, y: -153}
-        - {x: 22, y: -153}
-        - {x: 24, y: -151}
-        - {x: 24, y: -149}
-        - {x: 22, y: -147}
-      - - {x: 9, y: 126}
-        - {x: -30, y: 101}
-        - {x: -30, y: -152}
-        - {x: 26, y: -152}
-        - {x: 28, y: -150}
-        - {x: 28, y: 120}
+      - - {x: 16, y: -149}
+        - {x: 16, y: -150}
+        - {x: 19, y: -153}
+        - {x: 25, y: -153}
+        - {x: 25, y: -147}
+        - {x: 18, y: -147}
+      - - {x: -1, y: 126}
+        - {x: -25, y: 64}
+        - {x: -25, y: -142}
+        - {x: -5, y: -152}
+        - {x: 13, y: -152}
+        - {x: 25, y: -144}
         - {x: 25, y: 126}
+    - name: candleSS_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 457
+        width: 50
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 82}
+        - {x: -25, y: 62}
+        - {x: -25, y: -140}
+        - {x: -19, y: -142}
+        - {x: 22, y: -142}
+        - {x: 25, y: -140}
+        - {x: 25, y: 66}
+        - {x: 14, y: 82}
     outline: []
   spritePackingTag: 
   userData: 
