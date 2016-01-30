@@ -62,15 +62,18 @@ public class InventoryController : MonoBehaviour {
 
     public void DropItem()
     {
-        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0 && !theMouseController.mouseState.Equals("Empty"))
+        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0 /*&& !theMouseController.mouseState.Equals("Empty")*/)
         {
+			print ("item dropped");
 			Destroy(inventoryUIitems[currentItem].gameObject);
 			inventoryUIitems.RemoveAt (currentItem);
 
             Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePosition);
 
-            Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, objectPos, transform.rotation);
+			ItemCursor.current.DropItem (theInventory [currentItem].GetComponent<isItem> ().gameObject.name, theInventory [currentItem].GetComponent<isItem> ().itemImage, theInventory [currentItem].GetComponent<isItem>().itemInGround);
+
+            //Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, objectPos, transform.rotation);
 			theInventory.RemoveAt(currentItem);
             if (currentItem > 0)
             {
