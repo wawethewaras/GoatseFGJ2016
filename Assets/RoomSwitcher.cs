@@ -28,6 +28,7 @@ public class RoomSwitcher : MonoBehaviour {
 		Camera.main.transform.position = new Vector3 (pRoom.transform.position.x, pRoom.transform.position.y, Camera.main.transform.position.z);
 		currentRoom = pRoom;
 
+		AudioPlayer.current.PlaySoundClip ("doorOpen");
 		CheckButtons ();
 		
 	}
