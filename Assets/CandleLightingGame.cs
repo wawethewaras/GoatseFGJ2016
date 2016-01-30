@@ -15,6 +15,7 @@ public class CandleLightingGame : MonoBehaviour {
 	}
 
 	public void LightCandle(GameObject candle){
+		print (candle.name);
 		candle.GetComponent<Animator> ().SetBool ("light", true);
 		candlesLit += 1;
 		litCandlesList.Add(candle);
@@ -24,7 +25,6 @@ public class CandleLightingGame : MonoBehaviour {
 
 	void Suffocate(){
 		foreach (GameObject candle in litCandlesList) {
-			print (candle.name);
 			candle.GetComponent<Animator> ().SetBool ("light", false);
 		}
 
@@ -35,8 +35,16 @@ public class CandleLightingGame : MonoBehaviour {
 		for (int i = 0; i < litCandlesList.Count; i++) {
 			if (!(litCandlesList [i].name == correctCandleOrder [i])) {
 				Suffocate ();
+				break;
 			}
+			if(i == 4)
+				WinPuzzle ();
 		}
+
+	}
+
+	void WinPuzzle(){
+		AudioPlayer.current.PlaySoundClip ("applause");
 	}
 
 

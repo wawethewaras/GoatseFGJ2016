@@ -41,7 +41,9 @@ public class AudioPlayer : MonoBehaviour {
 				source.PlayOneShot (audioClips [3]);
 			} else if (clipName == "pickUpItem") {
 				source.PlayOneShot (audioClips [4]);
-			} 
+			} else if (clipName == "applause") {
+				source.PlayOneShot (audioClips [5]);
+			}
 
 			lastPlayed = Time.time;
 		}

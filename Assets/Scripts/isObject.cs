@@ -35,7 +35,7 @@ public class isObject : MonoBehaviour {
             {
                 OpenDoor();
             }
-			print (name);
+
 			if (gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4") {
 				CandleLightingGame.current.LightCandle (gameObject);
 			}

@@ -126,11 +126,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.4499998
+      value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.72
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -158,7 +158,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 153934, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_Name
-      value: candle (2)
+      value: candle2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
@@ -276,11 +276,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.74000025
+      value: -3.37
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.1100001
+      value: 3.28
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -356,10 +356,6 @@ Prefab:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 1341943596}
-    - target: {fileID: 416948, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
   m_IsPrefabParent: 0
@@ -372,11 +368,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.1
+      value: 12.98
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.1100001
+      value: 3.28
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -404,7 +400,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 153934, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_Name
-      value: candle (3)
+      value: candle3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
@@ -599,11 +595,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.98
+      value: 4.81
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -631,7 +627,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 153934, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_Name
-      value: candle (4)
+      value: candle4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
@@ -737,6 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   theScalePuzzle: {fileID: 1520892392}
+  rocks: []
 --- !u!4 &1463279594
 Transform:
   m_ObjectHideFlags: 0
@@ -1067,6 +1064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   theScalePuzzle: {fileID: 1520892392}
+  rocks: []
 --- !u!4 &1611095186
 Transform:
   m_ObjectHideFlags: 0
@@ -1092,11 +1090,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.440001
+      value: 13.78
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.6800001
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 412244, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1124,7 +1122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 153934, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
       propertyPath: m_Name
-      value: candle (1)
+      value: candle1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74dfb5d94926c4336b4806736b573cd1, type: 2}
