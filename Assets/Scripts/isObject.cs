@@ -8,6 +8,13 @@ public class isObject : MonoBehaviour {
     public string itemInfo;
     public bool activatesInfo;
 
+    public GameObject currentRoom;
+    public GameObject openRoom;
+    RoomSwitcher theRoomSwitcher;
+
+    void Start() {
+        theRoomSwitcher = FindObjectOfType<RoomSwitcher>();
+    }
     void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && activatesInfo)
@@ -21,6 +28,10 @@ public class isObject : MonoBehaviour {
 			if (gameObject.name == "skull") {
 				DropKey ();
 			}
+            if (gameObject.name == "EvilSanta")
+            {
+                OpenDoor();
+            }
         }
     }
 
@@ -31,6 +42,12 @@ public class isObject : MonoBehaviour {
             affectedObject.GetComponent<BoxCollider2D>().enabled = true;
         }
 	}
+
+    void OpenDoor() {
+        
+        currentRoom.GetComponent<Room>().roomUp = openRoom;
+        theRoomSwitcher.CheckButtons();
+    }
 
     void OnMouseEnter()
     {
