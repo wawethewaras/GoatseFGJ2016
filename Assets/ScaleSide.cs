@@ -4,29 +4,25 @@ using System.Collections.Generic;
 
 public class ScaleSide : MonoBehaviour {
 
-	public List<GameObject> objectsOnSide;
+    public int weight;
+    public ScalePuzzle theScalePuzzle;
+    public List<ItemInGround> rocks;
 
-	void OnTriggerEnter2D (Collider2D coll){
-		if (coll.tag == "Weight") {
-			objectsOnSide.Add (coll.gameObject);
+    void OnTriggerStay2D (Collider2D other){
+        if (other.GetComponent<ItemInGround>() && !other.gameObject.transform.Equals(this.transform))
+        {
+            other.gameObject.transform.SetParent(this.transform);
+            
+        }
+    }
 
-			GetComponentInParent<ScalePuzzle> ().CheckSides ();
+    public int countWeight() {
+        weight = 0;
+        for (int i = 0; gameObject.transform.GetChildCount() > i; i++) {
+            weight += transform.GetChild(i).GetComponent<ItemInGround>().weight;
+        }
+        return weight;
 
-		}
-	}
-
-	void OnTriggerExit2D (Collider2D coll){
-		if (coll.tag == "Weight") {
-			objectsOnSide.Remove (coll.gameObject);
-		
-			GetComponentInParent<ScalePuzzle> ().CheckSides ();
-		}
-	}
-
-	public void RemoveObject(GameObject obj){
-		objectsOnSide.Remove (obj);
-
-		GetComponentInParent<ScalePuzzle> ().CheckSides ();
-	}
+    }
 
 }
