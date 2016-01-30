@@ -22,6 +22,9 @@ public class ItemInGround : MonoBehaviour {
         {
             theInventoryController.AddItem(item);
             Instantiate(particleEffect, transform.position, transform.rotation);
+			ScaleSide[] sides = FindObjectsOfType<ScaleSide> ();
+			sides[0].RemoveObject (gameObject);
+			sides[1].RemoveObject(gameObject);
             Destroy(gameObject);
         }
     }
