@@ -12,8 +12,14 @@ public class InventoryController : MonoBehaviour {
 	public GameObject inventoryHL;
 
 	public List<GameObject> inventoryUIitems;
-	
-	void Update () {
+    MouseController theMouseController;
+
+
+    void Start() {
+        theMouseController = FindObjectOfType<MouseController>();
+    }
+
+    void Update () {
 		
         UseItem();
         DropItem();
@@ -44,22 +50,27 @@ public class InventoryController : MonoBehaviour {
 		currentItem = theInventory.Count - 1;
     }
 
+
     public void UseItem() {
-        if (Input.GetButtonDown("UseItem"))
+        if (Input.GetButtonDown("UseItem") && !theMouseController.mouseState.Equals("Empty"))
         {
             Debug.Log("item used");
         }
     }
 
+
+
     public void DropItem()
     {
-        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0)
+        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0 && !theMouseController.mouseState.Equals("Empty"))
         {
-            Debug.Log("item removed");
 			Destroy(inventoryUIitems[currentItem].gameObject);
 			inventoryUIitems.RemoveAt (currentItem);
 
-			Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, GetComponent<RoomSwitcher>().currentRoom.transform.position, transform.rotation);
+            Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePosition);
+
+            Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, objectPos, transform.rotation);
 			theInventory.RemoveAt(currentItem);
             if (currentItem > 0)
             {

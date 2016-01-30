@@ -95,6 +95,7 @@ GameObject:
   - 4: {fileID: 160354151}
   - 212: {fileID: 160354150}
   - 114: {fileID: 160354149}
+  - 61: {fileID: 160354152}
   m_Layer: 0
   m_Name: EvilSanta
   m_TagString: Untagged
@@ -156,6 +157,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!61 &160354152
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160354148}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
 --- !u!1 &496433373
 GameObject:
   m_ObjectHideFlags: 0
