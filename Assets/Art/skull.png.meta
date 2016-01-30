@@ -1,0 +1,98 @@
+fileFormatVersion: 2
+guid: f872eacdeb07333418b986142302e34e
+timeCreated: 1454181153
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skull_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skull_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1425
+        width: 953
+        height: 687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 121.8, y: 61.50006}
+        - {x: 183.8, y: 108.50006}
+        - {x: 199.8, y: 97.50006}
+        - {x: 240.8, y: 92.50006}
+        - {x: 255.8, y: 103.50006}
+        - {x: 255.8, y: 152.50006}
+        - {x: 223.8, y: 183.50006}
+        - {x: 152.8, y: 183.50006}
+        - {x: 57.800003, y: 138.50006}
+        - {x: 29.800003, y: 110.50006}
+        - {x: -18.199997, y: 118.50006}
+        - {x: -125.2, y: 174.50006}
+        - {x: -146.2, y: 183.50006}
+        - {x: -165.2, y: 183.50006}
+        - {x: -231.2, y: 170.50006}
+        - {x: -251.2, y: 140.50006}
+        - {x: -254.2, y: 125.50006}
+        - {x: -254.2, y: 79.50006}
+        - {x: -241.2, y: 67.50006}
+        - {x: -228.2, y: 66.50006}
+        - {x: -226.2, y: 70.50006}
+        - {x: -121.2, y: 83.50006}
+        - {x: -93.2, y: 53.50006}
+        - {x: -84.2, y: -29.499939}
+        - {x: -25.199997, y: -183.49994}
+        - {x: 47.800003, y: -183.49994}
+        - {x: 57.800003, y: -169.49994}
+        - {x: 82.8, y: -63.49994}
+        - {x: 107.8, y: -47.49994}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
