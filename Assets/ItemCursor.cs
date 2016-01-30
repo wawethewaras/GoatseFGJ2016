@@ -5,7 +5,6 @@ public class ItemCursor : MonoBehaviour {
     public string mouseState;
 
     private GameObject hoveringObject;
-	public GameObject itemGameObject;
 	private string hoveringType;
 	private Vector3 mousePos;
 	private string name;
@@ -59,7 +58,7 @@ public class ItemCursor : MonoBehaviour {
         }
     }*/
     void DropItem() {
-        if (Input.GetMouseButtonDown(0) && hoveringObject.GetComponent<SpriteRenderer>().sprite != null && !mouseState.Equals("Empty")/*&& hoveringType == "emp"*/)
+        if (Input.GetMouseButtonDown(0)/*Input.GetButtonDown("DropItem")*/ && hoveringObject.GetComponent<SpriteRenderer>().sprite != null && !mouseState.Equals("Empty")/*&& hoveringType == "emp"*/)
         {
 
             GameObject placedObject = (GameObject)Instantiate(objectToDrop, mousePos, Quaternion.identity);
