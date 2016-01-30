@@ -355,7 +355,11 @@ Prefab:
     - target: {fileID: 11478076, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
       propertyPath: currentRoom
       value: 
-      objectReference: {fileID: 1341943596}
+      objectReference: {fileID: 2105646077}
+    - target: {fileID: 183034, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
   m_IsPrefabParent: 0
@@ -1350,3 +1354,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6482d514f85f1454bb0924411e462e89, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2105646077 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 165496, guid: 6482d514f85f1454bb0924411e462e89, type: 2}
+  m_PrefabInternal: {fileID: 2105646076}
