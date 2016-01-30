@@ -192,6 +192,8 @@ MonoBehaviour:
   roomDown: {fileID: 0}
   roomLeft: {fileID: 191586}
   roomRight: {fileID: 0}
+  roomEffects: []
+  roomMusic: {fileID: 8300000, guid: 76f04c5726d0d4e3aaf2a05fdd787a62, type: 3}
 --- !u!114 &11413978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,6 +209,8 @@ MonoBehaviour:
   roomDown: {fileID: 0}
   roomLeft: {fileID: 0}
   roomRight: {fileID: 0}
+  roomEffects: []
+  roomMusic: {fileID: 0}
 --- !u!114 &11414620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,6 +226,8 @@ MonoBehaviour:
   roomDown: {fileID: 0}
   roomLeft: {fileID: 0}
   roomRight: {fileID: 191586}
+  roomEffects: []
+  roomMusic: {fileID: 0}
 --- !u!114 &11432252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,6 +243,8 @@ MonoBehaviour:
   roomDown: {fileID: 152932}
   roomLeft: {fileID: 187292}
   roomRight: {fileID: 118818}
+  roomEffects: []
+  roomMusic: {fileID: 0}
 --- !u!114 &11486236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -252,6 +260,8 @@ MonoBehaviour:
   roomDown: {fileID: 191586}
   roomLeft: {fileID: 0}
   roomRight: {fileID: 0}
+  roomEffects: []
+  roomMusic: {fileID: 0}
 --- !u!212 &21213768
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -44,6 +44,7 @@ public class InventoryController : MonoBehaviour {
         tempItem.GetComponentInChildren<Image>().sprite = newItem.GetComponent<isItem>().itemImage;
         newItem.GetComponent<isItem>().itemsImageGameObject = tempItem;
 
+		AudioPlayer.current.PlaySoundClip ("pickUpItem");
 		currentItem = theInventory.Count - 1;
     }
 

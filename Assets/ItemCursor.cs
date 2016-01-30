@@ -67,6 +67,8 @@ public class ItemCursor : MonoBehaviour {
             hoveringObject.GetComponent<SpriteRenderer>().sprite = null;
             mouseState = "Empty";
 
+			AudioPlayer.current.PlaySoundClip ("dropItem");
+
         }
     }
     public void RemoveItem()
