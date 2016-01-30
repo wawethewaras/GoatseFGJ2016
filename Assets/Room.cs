@@ -12,7 +12,6 @@ public class Room : MonoBehaviour {
 	public AudioClip roomMusic;
 
 	public void OnRoomEnter(){
-		print ("lol");
 		if (roomEffects.Length != 0) {
 			for (int i = 0; i < roomEffects.Length; i++) {
 				AudioPlayer.current.PlaySoundClip (roomEffects [i].name);

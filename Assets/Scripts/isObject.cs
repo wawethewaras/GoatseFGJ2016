@@ -4,15 +4,25 @@ using System.Collections;
 public class isObject : MonoBehaviour {
 
     public string itemThatActivates;
+	public GameObject affectedObject;
 	
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1) /*Input.GetButtonDown("UseItem")*/&& ItemCursor.current.mouseState.Equals(itemThatActivates))
+		
+        if (Input.GetMouseButtonDown(1) && ItemCursor.current.mouseState == itemThatActivates)
         {
-            Debug.Log("Santa killed");
-            Destroy(gameObject);
             ItemCursor.current.RemoveItem();
+
+			if (gameObject.name == "skull") {
+				DropKey ();
+			}
         }
     }
+
+	void DropKey(){
+		affectedObject.SetActive (true);
+		affectedObject.GetComponent<BoxCollider2D> ().enabled = true;
+	}
+	
 }
