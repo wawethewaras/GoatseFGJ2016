@@ -11,6 +11,10 @@ public class RoomSwitcher : MonoBehaviour {
 	public Button leftButton;
 	public Button rightButton;
 
+    void Start() {
+        CheckButtons();
+        Camera.main.transform.position = new Vector3(currentRoom.transform.position.x, currentRoom.transform.position.y, Camera.main.transform.position.z);
+    }
 
 	public void ChangeRoom(string room){
 		GameObject pRoom = null;
