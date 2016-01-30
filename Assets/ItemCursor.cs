@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ItemCursor : MonoBehaviour {
     public string mouseState;
@@ -13,7 +14,14 @@ public class ItemCursor : MonoBehaviour {
 
 	public static ItemCursor current;
 
-	void Awake(){
+    public Texture2D cursorTexture;
+    public CursorMode cursorMode = CursorMode.Auto;
+    public Vector2 hotSpot = Vector2.zero;
+    public GameObject infoText;
+    public float infoTextDuration;
+    private float infoTextDurationCounter;
+
+    void Awake(){
 		current = this;
 
 
@@ -28,7 +36,26 @@ public class ItemCursor : MonoBehaviour {
 
     }
 
-	public void HoveringItem(string pname, Sprite psprite, GameObject itemObject, string iMouseState){
+    void Update()
+    {
+        if (infoTextDurationCounter >= 0)
+        {
+            infoTextDurationCounter -= Time.deltaTime;
+        }
+        else {
+            infoText.SetActive(false);
+        }
+
+        mousePos = Input.mousePosition;
+        mousePos[2] = -Camera.main.transform.position.z;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        hoveringObject.transform.position = mousePos;
+
+        DropItem();
+        //UseItem();
+    }
+
+    public void HoveringItem(string pname, Sprite psprite, GameObject itemObject, string iMouseState){
 		hoveringObject.GetComponent<SpriteRenderer>().sprite = psprite;
 		name = pname;
 		sprite = psprite;
@@ -37,26 +64,6 @@ public class ItemCursor : MonoBehaviour {
         //hoveringType = "item";
     }
 
-	void Update(){
-		mousePos = Input.mousePosition;
-		mousePos [2] = -Camera.main.transform.position.z;
-		mousePos = Camera.main.ScreenToWorldPoint (mousePos);
-		hoveringObject.transform.position = mousePos;
-
-        DropItem();
-        //UseItem();
-
-    }
-    /*
-    void UseItem() {
-        if (Input.GetMouseButtonDown(1) && !mouseState.Equals("Empty"))
-        {
-            Debug.Log("item used");
-            hoveringType = null;
-            hoveringObject.GetComponent<SpriteRenderer>().sprite = null;
-            mouseState = "Empty";
-        }
-    }*/
     void DropItem() {
         if (Input.GetMouseButtonDown(0)/*Input.GetButtonDown("DropItem")*/ && hoveringObject.GetComponent<SpriteRenderer>().sprite != null && !mouseState.Equals("Empty")/*&& hoveringType == "emp"*/)
         {
@@ -76,6 +83,23 @@ public class ItemCursor : MonoBehaviour {
         hoveringType = null;
         hoveringObject.GetComponent<SpriteRenderer>().sprite = null;
         mouseState = "Empty";
+    }
+
+    public void ChangeCursor() {
+        if (ItemCursor.current.mouseState.Equals("Empty"))
+        {
+            Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        }
+    }
+    public void ReturnCursor()
+    {
+        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+    }
+
+    public void EnableInfo(string info) {
+        infoText.SetActive(true);
+        infoText.GetComponentInChildren<Text>().text = info;
+        infoTextDurationCounter = infoTextDuration;
     }
 }
 

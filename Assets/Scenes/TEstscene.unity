@@ -161,6 +161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemThatActivates: 
+  affectedObject: {fileID: 0}
+  itemInfo: "Joulupukki vihaa siirej\xE4!"
 --- !u!61 &212844418
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,7 +203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1202947936
 MonoBehaviour:
   m_ObjectHideFlags: 0
