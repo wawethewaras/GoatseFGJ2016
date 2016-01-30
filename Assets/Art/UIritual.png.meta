@@ -1,12 +1,14 @@
 fileFormatVersion: 2
 guid: 8da1cf879eb0e6d43959600dd56ea187
-timeCreated: 1454155469
+timeCreated: 1454158834
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Arrow
     21300002: UIritual_1
     21300004: UIritual_2
+    21300006: InventoryUIBG
+    21300008: ItemHighlight
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,21 +59,88 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 271
+        y: 275
         width: 98
-        height: 129
+        height: 125
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 1, y: 63.5}
-        - {x: -4, y: 63.5}
-        - {x: -49, y: -39.5}
+      - - {x: 37, y: -5.5}
+        - {x: 9, y: 55.5}
+        - {x: 1, y: 61.5}
+        - {x: -4, y: 61.5}
+        - {x: -49, y: -44.5}
         - {x: -49, y: -47.5}
-        - {x: 48, y: -47.5}
-        - {x: 49, y: -45.5}
-        - {x: 49, y: -39.5}
-        - {x: 9, y: 57.5}
+        - {x: -48, y: -50.5}
+        - {x: -39, y: -49.5}
+        - {x: 14, y: -62.5}
+        - {x: 49, y: -62.5}
+        - {x: 49, y: 2.5}
+        - {x: 45, y: 1.5}
+      - - {x: 44, y: 58.5}
+        - {x: 44, y: 25.5}
+        - {x: 47, y: 18.5}
+        - {x: 49, y: 18.5}
+        - {x: 49, y: 58.5}
+    - name: InventoryUIBG
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 272
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 42, y: 42, z: 42, w: 42}
+      outline:
+      - - {x: -128, y: 64}
+        - {x: -128, y: -64}
+        - {x: 128, y: -64}
+        - {x: 128, y: 64}
+    - name: ItemHighlight
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 19, y: 21, z: 21, w: 14}
+      outline:
+      - - {x: -64, y: 64}
+        - {x: -64, y: -64}
+        - {x: 64, y: -64}
+        - {x: 64, y: 64}
+      - - {x: -29, y: -48}
+        - {x: -46, y: -47}
+        - {x: -48, y: -47}
+        - {x: -49, y: -43}
+        - {x: -50, y: -25}
+        - {x: -50, y: -1}
+        - {x: -51, y: 4}
+        - {x: -52, y: 15}
+        - {x: -50, y: 19}
+        - {x: -48, y: 27}
+        - {x: -49, y: 45}
+        - {x: -49, y: 52}
+        - {x: -37, y: 49}
+        - {x: -23, y: 49}
+        - {x: 27, y: 50}
+        - {x: 28, y: 51}
+        - {x: 49, y: 46}
+        - {x: 49, y: 34}
+        - {x: 50, y: 17}
+        - {x: 49, y: 16}
+        - {x: 48, y: 2}
+        - {x: 48, y: -9}
+        - {x: 49, y: -22}
+        - {x: 50, y: -47}
+        - {x: 51, y: -48}
+        - {x: 12, y: -48}
+        - {x: -4, y: -49}
+        - {x: -5, y: -48}
     outline: []
   spritePackingTag: 
   userData: 

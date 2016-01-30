@@ -64,11 +64,11 @@ public class AudioPlayer : MonoBehaviour {
 		for (;;) {
 
 			//get random song number
-			int newSong = (int)Random.Range (0, musicClips.Length);
+			int newSong = (int)Random.Range (0, musicClips.Length-1);
 			//if it's the same as previous song
 			while (newSong == previousSong) {
 				//get new one
-				newSong = Random.Range (0, musicClips.Length);
+				newSong = Random.Range (0, musicClips.Length-1);
 			}
 
 			previousSong = newSong;
