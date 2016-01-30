@@ -47,6 +47,7 @@ public class isObject : MonoBehaviour {
         
         currentRoom.GetComponent<Room>().roomUp = openRoom;
         theRoomSwitcher.CheckButtons();
+        transform.position = new Vector3(transform.position.x -10f, transform.position.y, transform.position.z);
     }
 
     void OnMouseEnter()
