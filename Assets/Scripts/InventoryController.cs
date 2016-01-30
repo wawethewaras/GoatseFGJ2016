@@ -21,8 +21,7 @@ public class InventoryController : MonoBehaviour {
 
     void Update () {
 		
-        UseItem();
-        DropItem();
+        ActvateItem();
         ChangeItem();
 
 		if (currentItem != 0) {
@@ -51,27 +50,20 @@ public class InventoryController : MonoBehaviour {
     }
 
 
-    public void UseItem() {
-        if (Input.GetButtonDown("UseItem") && !theMouseController.mouseState.Equals("Empty"))
-        {
-            Debug.Log("item used");
-        }
-    }
 
 
-
-    public void DropItem()
+    public void ActvateItem()
     {
-        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0 /*&& !theMouseController.mouseState.Equals("Empty")*/)
+        if (Input.GetButtonDown("DropItem") && theInventory.Count > 0 && ItemCursor.current.mouseState.Equals("Empty"))
         {
-			print ("item dropped");
-			Destroy(inventoryUIitems[currentItem].gameObject);
+            Debug.Log("item sctivated");
+            Destroy(inventoryUIitems[currentItem].gameObject);
 			inventoryUIitems.RemoveAt (currentItem);
 
             Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePosition);
 
-			ItemCursor.current.DropItem (theInventory [currentItem].GetComponent<isItem> ().gameObject.name, theInventory [currentItem].GetComponent<isItem> ().itemImage, theInventory [currentItem].GetComponent<isItem>().itemInGround);
+			ItemCursor.current.HoveringItem(theInventory [currentItem].GetComponent<isItem> ().gameObject.name, theInventory [currentItem].GetComponent<isItem> ().itemImage, theInventory [currentItem].GetComponent<isItem>().itemInGround, theInventory[currentItem].GetComponent<isItem>().mouseState);
 
             //Instantiate(theInventory[currentItem].GetComponent<isItem>().itemInGround, objectPos, transform.rotation);
 			theInventory.RemoveAt(currentItem);
@@ -87,7 +79,6 @@ public class InventoryController : MonoBehaviour {
         if (Input.GetButtonDown("ChangeItem"))
         {
 			currentItem++;
-            Debug.Log("item changed");
             if (currentItem >= theInventory.Count)
             {
                 currentItem = 0;

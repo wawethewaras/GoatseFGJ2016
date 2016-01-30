@@ -4,7 +4,7 @@ using System.Collections;
 public class isObject : MonoBehaviour {
 
     MouseController theMouseController;
-    public string MouseState;
+    public string itemThatActivates;
 
     void Start () {
         theMouseController = FindObjectOfType<MouseController>();
@@ -13,10 +13,11 @@ public class isObject : MonoBehaviour {
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && theMouseController.mouseState.Equals(MouseState))
+        if (Input.GetMouseButtonDown(1) && ItemCursor.current.mouseState.Equals(itemThatActivates))
         {
             Debug.Log("Santa killed");
             Destroy(gameObject);
+            ItemCursor.current.RemoveItem();
         }
     }
 }

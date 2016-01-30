@@ -43,6 +43,7 @@ MonoBehaviour:
   itemInGround: {fileID: 106394, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
   itemsImageGameObject: {fileID: 0}
   itemImage: {fileID: 21300000, guid: 63f908c03bca14a3e8e2a36b2727a2cc, type: 3}
+  mouseState: Knife1
 --- !u!212 &21204828
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -89,6 +90,10 @@ Prefab:
       propertyPath: itemInGround
       value: 
       objectReference: {fileID: 106394, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: mouseState
+      value: Knife1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 156420}
