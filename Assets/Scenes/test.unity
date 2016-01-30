@@ -306,6 +306,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 159614, guid: 535cc070f1de7e044b311db461bed859, type: 2}
+  particleEffect: {fileID: 102114, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+--- !u!1001 &540065832
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -13.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 402302, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &614782575
 Prefab:
   m_ObjectHideFlags: 0

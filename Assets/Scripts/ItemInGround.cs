@@ -4,6 +4,7 @@ using System.Collections;
 public class ItemInGround : MonoBehaviour {
 
     public GameObject item;
+    public GameObject particleEffect;
     InventoryController theInventoryController;
 
     void Start() {
@@ -20,6 +21,7 @@ public class ItemInGround : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             theInventoryController.AddItem(item);
+            Instantiate(particleEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
