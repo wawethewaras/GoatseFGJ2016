@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 435226}
   - 114: {fileID: 11451902}
   m_Layer: 0
-  m_Name: RockInINventory
+  m_Name: RockInINventory4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb31ab9b656f594a8a20bf9cc6fcb5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInGround: {fileID: 190134, guid: 6678b3df7130747ef968125466135e0e, type: 2}
+  itemInGround: {fileID: 181712, guid: bcd5008d3828e46f894bd349c63bb5d8, type: 2}
   itemsImageGameObject: {fileID: 0}
-  itemImage: {fileID: 21300000, guid: 63f908c03bca14a3e8e2a36b2727a2cc, type: 3}
+  itemImage: {fileID: 21300000, guid: 8f4d901f4dc3cbc4889f4147c843e5e1, type: 3}
   mouseState: Key1
 --- !u!1001 &100100000
 Prefab:
@@ -53,11 +53,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: itemInGround
       value: 
-      objectReference: {fileID: 190134, guid: 6678b3df7130747ef968125466135e0e, type: 2}
+      objectReference: {fileID: 181712, guid: bcd5008d3828e46f894bd349c63bb5d8, type: 2}
     - target: {fileID: 0}
       propertyPath: itemImage
       value: 
-      objectReference: {fileID: 21300000, guid: 63f908c03bca14a3e8e2a36b2727a2cc,
+      objectReference: {fileID: 21300000, guid: 8f4d901f4dc3cbc4889f4147c843e5e1,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

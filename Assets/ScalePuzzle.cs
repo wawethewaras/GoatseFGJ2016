@@ -29,6 +29,9 @@ public class ScalePuzzle : MonoBehaviour {
         //print(weightedTowards);
         //rightSide.GetComponent<ScaleSide>().resetWeight();
         //leftSide.GetComponent<ScaleSide>().resetWeight();
+
+		UpdateAnim ();
+
     }
 
 	void Update (){
@@ -54,4 +57,10 @@ public class ScalePuzzle : MonoBehaviour {
         door.transform.position = new Vector3(doorLocation.x, doorLocation.y, doorLocation.z);
         theRoomSwitcher.CheckButtons();
     }
+
+	void UpdateAnim(){
+
+		GetComponent<Animator> ().SetInteger ("direction", weightedTowards);
+
+	}
 }
