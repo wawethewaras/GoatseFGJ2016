@@ -554,15 +554,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 481154, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11478076, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 876409166}
-    - target: {fileID: 416948, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 5.2
+    - target: {fileID: 163932, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e4cb071d6eae2e419047e59ab74a183, type: 2}
@@ -1251,7 +1251,7 @@ Transform:
   - {fileID: 1104067138}
   - {fileID: 1123682676}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!114 &1804584665
 MonoBehaviour:
   m_ObjectHideFlags: 0
