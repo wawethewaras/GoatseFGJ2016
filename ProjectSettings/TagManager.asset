@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Inventory
   - Weight
+  - Goat
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Goat
   - 
   - 
   - 

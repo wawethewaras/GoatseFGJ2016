@@ -37,6 +37,7 @@ public class InventoryController : MonoBehaviour {
     }
     public void AddItem(GameObject newItem)
     {
+
         theInventory.Add(newItem);
 		GameObject tempItem = (GameObject)Instantiate(currentItemImage);
 		inventoryUIitems.Add (tempItem);

@@ -23,7 +23,7 @@ public class ItemInGround : MonoBehaviour {
         {
             ItemCursor.current.ChangeCursor();
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty"))
         {
             theInventoryController.AddItem(item);
             Instantiate(particleEffect, transform.position, transform.rotation);

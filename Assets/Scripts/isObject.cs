@@ -35,8 +35,11 @@ public class isObject : MonoBehaviour {
             {
                 OpenDoor();
             }
-
-			if (gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4") {
+            if (gameObject.tag == "Goat")
+            {
+                KillGoat();
+            }
+            if (gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4") {
 				CandleLightingGame.current.LightCandle (gameObject);
 			}
         }
@@ -56,7 +59,9 @@ public class isObject : MonoBehaviour {
         theRoomSwitcher.CheckButtons();
         transform.position = new Vector3(transform.position.x -10f, transform.position.y, transform.position.z);
     }
-
+    void KillGoat() {
+        Debug.Log("Game over");
+    }
     void OnMouseEnter()
     {
         if (ItemCursor.current.mouseState.Equals("Empty"))
