@@ -25,7 +25,7 @@ public class isObject : MonoBehaviour {
         {
             ItemCursor.current.RemoveItem();
 
-			if (gameObject.name == "skull") {
+			if (gameObject.name == "Skull") {
 				DropKey ();
 			}
             if (gameObject.name == "EvilSanta")

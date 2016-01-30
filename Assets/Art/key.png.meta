@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: b340c017c6cf047da925d8aec39c11e4
-timeCreated: 1454162310
+timeCreated: 1454170433
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Key
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +39,48 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Key
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1348
+        width: 440
+        height: 740
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.66667, y: 42.93335}
+        - {x: 101.66667, y: 55.93335}
+        - {x: 118.66667, y: 82.93335}
+        - {x: 118.66667, y: 154.93335}
+        - {x: 109.66667, y: 182.93335}
+        - {x: 38.66667, y: 198.93335}
+        - {x: -80.33333, y: 198.93335}
+        - {x: -117.33333, y: 158.93335}
+        - {x: -117.33333, y: 78.93335}
+        - {x: -85.33333, y: 39.93335}
+        - {x: -36.33333, y: 36.93335}
+        - {x: -57.33333, y: -71.06665}
+        - {x: -86.33333, y: -83.06665}
+        - {x: -70.33333, y: -172.06665}
+        - {x: -23.333328, y: -197.06665}
+        - {x: 36.66667, y: -197.06665}
+        - {x: 43.66667, y: -186.06665}
+        - {x: 40.66667, y: -135.06665}
+        - {x: 32.66667, y: -40.06665}
     outline: []
   spritePackingTag: 
   userData: 
