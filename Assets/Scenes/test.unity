@@ -116,6 +116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemThatActivates: Knife
   affectedObject: {fileID: 0}
+  itemInfo: 
+  activatesInfo: 0
 --- !u!212 &160354150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -313,11 +315,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -26.64
+      value: -28.23
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.14
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -329,7 +331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalRotation.z
@@ -337,7 +339,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.00000016292068
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_RootOrder
@@ -345,7 +347,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429148, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7dbbc46127316084da1092b604a218c5, type: 2}

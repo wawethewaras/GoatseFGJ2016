@@ -6,15 +6,15 @@ public class isObject : MonoBehaviour {
     public string itemThatActivates;
 	public GameObject affectedObject;
     public string itemInfo;
-    
+    public bool activatesInfo;
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty"))
+        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && activatesInfo)
         {
             ItemCursor.current.EnableInfo(itemInfo);
         }
-            if (Input.GetMouseButtonDown(1) && ItemCursor.current.mouseState == itemThatActivates)
+            if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState == itemThatActivates)
         {
             ItemCursor.current.RemoveItem();
 
@@ -24,9 +24,12 @@ public class isObject : MonoBehaviour {
         }
     }
 
-	void DropKey(){
-		affectedObject.SetActive (true);
-		affectedObject.GetComponent<BoxCollider2D> ().enabled = true;
+    void DropKey()
+    {
+        if (affectedObject != null) {
+            affectedObject.SetActive(true);
+            affectedObject.GetComponent<BoxCollider2D>().enabled = true;
+        }
 	}
 
     void OnMouseEnter()
