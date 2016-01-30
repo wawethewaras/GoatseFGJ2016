@@ -8,9 +8,20 @@ public class ScalePuzzle : MonoBehaviour {
 	public GameObject rightSide;
 	public GameObject leftSide;
 
+
+    public GameObject openDoorTo;
+    public GameObject openDoorFrom;
+    public GameObject door;
+    Vector3 doorLocation;
+    public RoomSwitcher theRoomSwitcher;
+
+
     private float check = 0.5f;
     private float checkCounter;
 
+    void Start() {
+        doorLocation = door.transform.position;
+    }
     public void CheckSides(){
         //int rightWeight = rightSide.countWeight();
 
@@ -21,14 +32,26 @@ public class ScalePuzzle : MonoBehaviour {
     }
 
 	void Update (){
-        if (checkCounter <= 0)
+
+        CheckSides();
+        if (weightedTowards == 30)
         {
-            CheckSides();
-            checkCounter = check;
+            OpenDoor();
         }
         else {
-            checkCounter -= Time.deltaTime;
+            CloseDoor();
         }
 	}
-
+    void OpenDoor()
+    {
+        openDoorFrom.GetComponent<Room>().roomUp = openDoorTo;
+        theRoomSwitcher.CheckButtons();
+        door.transform.position = new Vector3(doorLocation.x - 10f, doorLocation.y, doorLocation.z);
+    }
+    void CloseDoor()
+    {
+        openDoorFrom.GetComponent<Room>().roomUp = null;
+        door.transform.position = new Vector3(doorLocation.x, doorLocation.y, doorLocation.z);
+        theRoomSwitcher.CheckButtons();
+    }
 }

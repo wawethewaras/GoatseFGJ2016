@@ -48,7 +48,7 @@ GameObject:
   - 4: {fileID: 401110}
   - 212: {fileID: 21259288}
   - 61: {fileID: 6139904}
-  - 114: {fileID: 11407314}
+  - 114: {fileID: 11446302}
   - 114: {fileID: 11453232}
   m_Layer: 0
   m_Name: Scale
@@ -200,7 +200,21 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.00000011920929}
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
---- !u!114 &11407314
+--- !u!114 &11425382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ed56a2cedf443f99e9e8b12408756e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 0
+  theScalePuzzle: {fileID: 11453232}
+  rocks: []
+--- !u!114 &11446302
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -217,20 +231,6 @@ MonoBehaviour:
   activatesInfo: 1
   currentRoom: {fileID: 0}
   openRoom: {fileID: 0}
---- !u!114 &11425382
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4ed56a2cedf443f99e9e8b12408756e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 0
-  theScalePuzzle: {fileID: 11453232}
-  rocks: []
 --- !u!114 &11453232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,6 +245,10 @@ MonoBehaviour:
   weightedTowards: 0
   rightSide: {fileID: 102370}
   leftSide: {fileID: 113792}
+  openDoorTo: {fileID: 0}
+  openDoorFrom: {fileID: 0}
+  door: {fileID: 178266}
+  theRoomSwitcher: {fileID: 0}
 --- !u!114 &11474788
 MonoBehaviour:
   m_ObjectHideFlags: 1

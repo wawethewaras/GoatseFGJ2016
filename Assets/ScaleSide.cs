@@ -6,7 +6,6 @@ public class ScaleSide : MonoBehaviour {
 
     public int weight;
     public ScalePuzzle theScalePuzzle;
-    public List<ItemInGround> rocks;
 
     void OnTriggerStay2D (Collider2D other){
         if (other.GetComponent<ItemInGround>() && !other.gameObject.transform.Equals(this.transform))

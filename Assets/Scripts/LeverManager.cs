@@ -32,5 +32,6 @@ public class LeverManager : MonoBehaviour {
     void CloseDoor() {
         openDoorFrom.GetComponent<Room>().roomUp = null;
         BookShell.transform.position = new Vector3(bookShelfLocation.x, bookShelfLocation.y, bookShelfLocation.z);
+        theRoomSwitcher.CheckButtons();
     }
 }
