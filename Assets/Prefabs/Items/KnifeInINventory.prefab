@@ -1,48 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &156420
+--- !u!1 &123440
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 447464}
-  - 114: {fileID: 11461720}
+  - 4: {fileID: 416966}
+  - 114: {fileID: 11444774}
   m_Layer: 0
-  m_Name: ItemInInventory1
+  m_Name: KnifeInINventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &447464
+--- !u!4 &416966
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156420}
+  m_GameObject: {fileID: 123440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 16.355, y: -5.910181, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11461720
+--- !u!114 &11444774
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156420}
+  m_GameObject: {fileID: 123440}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fb31ab9b656f594a8a20bf9cc6fcb5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInGround: {fileID: 106394, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
+  itemInGround: {fileID: 100864, guid: 8b93d0c372e7103458dd5bdd99e852d8, type: 2}
   itemsImageGameObject: {fileID: 0}
-  itemImage: {fileID: 21300000, guid: 6e8afeeb37438444d85773fcbfe6499a, type: 3}
-  mouseState: Goat
+  itemImage: {fileID: 21300000, guid: 63f908c03bca14a3e8e2a36b2727a2cc, type: 3}
+  mouseState: Knife
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -51,32 +51,14 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: itemImage
-      value: 
-      objectReference: {fileID: 21300000, guid: 6e8afeeb37438444d85773fcbfe6499a,
-        type: 3}
-    - target: {fileID: 0}
       propertyPath: itemInGround
       value: 
-      objectReference: {fileID: 106394, guid: 7dbbc46127316084da1092b604a218c5, type: 2}
+      objectReference: {fileID: 100864, guid: 8b93d0c372e7103458dd5bdd99e852d8, type: 2}
     - target: {fileID: 0}
       propertyPath: mouseState
-      value: Goat
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6e8afeeb37438444d85773fcbfe6499a,
-        type: 3}
-    - target: {fileID: 0}
-      propertyPath: m_Name
-      value: GoatInInventory
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
+      value: Knife
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 156420}
+  m_RootGameObject: {fileID: 123440}
   m_IsPrefabParent: 1
