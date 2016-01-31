@@ -76,7 +76,8 @@ public class isObject : MonoBehaviour {
         
         currentRoom.GetComponent<Room>().roomUp = openRoom;
         theRoomSwitcher.CheckButtons();
-        transform.position = new Vector3(transform.position.x -10f, transform.position.y, transform.position.z);
+        transform.position = new Vector3(transform.position.x +3.9f, transform.position.y, transform.position.z);
+        transform.localRotation = Quaternion.Euler(0, 180f, 0);
     }
     void KillGoat() {
         Debug.Log("Game over");
