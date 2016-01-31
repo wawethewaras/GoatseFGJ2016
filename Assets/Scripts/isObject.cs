@@ -54,7 +54,6 @@ public class isObject : MonoBehaviour {
 			}
 
 			if (gameObject.name == "Rope") {
-				print ("cutrope");
 				CutRope ();
 			}
             /*
