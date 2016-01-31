@@ -29,7 +29,7 @@ public class isObject : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && activatesInfo)
         {
-            ItemCursor.current.EnableInfo(itemInfo);
+			ItemCursor.current.StartCoroutine("EnableInfo", itemInfo);
         }
 
 

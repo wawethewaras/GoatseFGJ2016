@@ -50,13 +50,6 @@ public class ItemCursor : MonoBehaviour {
 
     void Update()
     {
-        if (infoTextDurationCounter >= 0)
-        {
-            infoTextDurationCounter -= Time.deltaTime;
-        }
-        else {
-            infoText.SetActive(false);
-        }
 
         mousePos = Input.mousePosition;
         mousePos[2] = -Camera.main.transform.position.z;
@@ -115,10 +108,21 @@ public class ItemCursor : MonoBehaviour {
         Cursor.SetCursor(cursorBasicTexture, hotSpot, cursorMode);
     }
 
-    public void EnableInfo(string info) {
-        infoText.SetActive(true);
-        infoText.GetComponentInChildren<Text>().text = info;
-        infoTextDurationCounter = infoTextDuration;
+    public IEnumerator EnableInfo(string info) {
+		infoText.SetActive(true);
+		infoText.GetComponentInChildren<Text>().text = info;
+
+		for (float f = infoTextDuration; f >= 0; f -= Time.deltaTime / infoTextDuration) {
+			Color c = infoText.GetComponent<Image>().color;
+			Color textColor = infoText.GetComponentInChildren<Text> ().color;
+			c.a = f;
+			textColor.a = f;
+			infoText.GetComponent<Image>().color = c;
+			infoText.GetComponentInChildren<Text> ().color = textColor;
+			yield return null;
+		}
+		infoText.SetActive(false);
+        
     }
 
 	private void GrabCursor(){
