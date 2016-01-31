@@ -377,7 +377,7 @@ MonoBehaviour:
   roomLeft: {fileID: 0}
   roomRight: {fileID: 186266}
   roomEffects: []
-  roomMusic: {fileID: 0}
+  roomMusic: {fileID: 8300000, guid: 76f04c5726d0d4e3aaf2a05fdd787a62, type: 3}
 --- !u!114 &11420176
 MonoBehaviour:
   m_ObjectHideFlags: 1
