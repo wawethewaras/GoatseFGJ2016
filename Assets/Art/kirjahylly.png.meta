@@ -1,0 +1,108 @@
+fileFormatVersion: 2
+guid: cd1c4702ddd7af246a34522256809c02
+timeCreated: 1454234131
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kirjahylly_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: kirjahylly_0
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 888
+        width: 648
+        height: 778
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.033386, y: -206.39996}
+        - {x: 20.033386, y: -205.39996}
+        - {x: 167.03339, y: -205.39996}
+        - {x: 171.03339, y: -203.39996}
+        - {x: 172.03339, y: -200.39996}
+        - {x: 172.03339, y: -194.39996}
+        - {x: 171.03339, y: -193.39996}
+        - {x: 171.03339, y: -134.39996}
+        - {x: 170.03339, y: -120.39996}
+        - {x: 172.03339, y: -118.39996}
+        - {x: 172.03339, y: -117.39996}
+        - {x: 170.03339, y: -115.39996}
+        - {x: 170.03339, y: -78.39996}
+        - {x: 169.03339, y: -77.39996}
+        - {x: 169.03339, y: -41.399963}
+        - {x: 168.03339, y: -40.399963}
+        - {x: 168.03339, y: 19.600037}
+        - {x: 167.03339, y: 20.600037}
+        - {x: 167.03339, y: 207.60004}
+        - {x: 166.03339, y: 208.60004}
+        - {x: -172.96661, y: 208.60004}
+        - {x: -172.96661, y: 49.600037}
+        - {x: -171.96661, y: 48.600037}
+        - {x: -171.96661, y: -30.399963}
+        - {x: -170.96661, y: -31.399963}
+        - {x: -170.96661, y: -82.39996}
+        - {x: -169.96661, y: -83.39996}
+        - {x: -169.96661, y: -169.39996}
+        - {x: -168.96661, y: -170.39996}
+        - {x: -168.96661, y: -205.39996}
+        - {x: -166.96661, y: -207.39996}
+        - {x: -80.96661, y: -207.39996}
+        - {x: -79.96661, y: -206.39996}
+      - - {x: 170.03339, y: -127.39996}
+        - {x: 170.03339, y: -130.39996}
+        - {x: 172.03339, y: -132.39996}
+        - {x: 174.03339, y: -131.39996}
+        - {x: 174.03339, y: -127.39996}
+        - {x: 173.03339, y: -126.39996}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
