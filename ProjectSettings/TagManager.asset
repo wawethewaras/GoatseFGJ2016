@@ -8,6 +8,7 @@ TagManager:
   - Weight
   - Goat
   - Candle
+  - SacrificePit
   layers:
   - Default
   - TransparentFX

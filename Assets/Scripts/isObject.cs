@@ -47,9 +47,9 @@ public class isObject : MonoBehaviour {
             }
             if (gameObject.tag == "Goat")
             {
-                //KillGoat();
+                KillGoat();
             }
-            if (/*gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4"*/gameObject.tag == "Candle") {
+            if (gameObject.tag == "Candle") {
 				CandleLightingGame.current.LightCandle (gameObject);
 			}
 
@@ -57,11 +57,11 @@ public class isObject : MonoBehaviour {
 				print ("cutrope");
 				CutRope ();
 			}
-
+            /*
 			if (gameObject.name == "SacrificeCircle") {
 				SacrificePuzzle.goatPlaced = true;
 				print ("goatplaced");
-			}
+			}*/
         }
     }
 

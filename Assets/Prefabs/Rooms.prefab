@@ -85,6 +85,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &177356
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 442806}
+  - 61: {fileID: 6191406}
+  - 114: {fileID: 11494144}
+  m_Layer: 0
+  m_Name: SacrificeCircle
+  m_TagString: SacrificePit
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &186266
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,6 +272,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 433862}
   m_RootOrder: 5
+--- !u!4 &442806
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.04, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 496280}
+  m_RootOrder: 0
 --- !u!4 &460080
 Transform:
   m_ObjectHideFlags: 1
@@ -299,7 +328,7 @@ Transform:
   m_GameObject: {fileID: 187292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -95.3, y: 0.7, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: -2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 433862}
   m_RootOrder: 3
@@ -324,9 +353,24 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 442806}
   m_Father: {fileID: 433862}
   m_RootOrder: 0
+--- !u!61 &6191406
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.3612585, y: -1.1166342}
+  serializedVersion: 2
+  m_Size: {x: 10.918322, y: 7.042946}
 --- !u!114 &11406252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -497,6 +541,23 @@ MonoBehaviour:
   roomRight: {fileID: 165496}
   roomEffects: []
   roomMusic: {fileID: 0}
+--- !u!114 &11494144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5894c66cb7f00f34480ce732e8e2ea48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemThatActivates: Goat
+  affectedObject: {fileID: 0}
+  itemInfo: 
+  activatesInfo: 0
+  currentRoom: {fileID: 0}
+  openRoom: {fileID: 0}
 --- !u!212 &21200780
 SpriteRenderer:
   m_ObjectHideFlags: 1

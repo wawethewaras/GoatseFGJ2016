@@ -96,7 +96,6 @@ public class ItemCursor : MonoBehaviour {
     }
     public void RemoveItem()
     {
-        Debug.Log("FSAF");
         hoveringType = null;
         hoveringObject.GetComponent<SpriteRenderer>().sprite = null;
         mouseState = "Empty";
