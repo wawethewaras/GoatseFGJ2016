@@ -16,8 +16,17 @@ public class isObject : MonoBehaviour {
     void Start() {
         theRoomSwitcher = FindObjectOfType<RoomSwitcher>();
     }
+
+	void Update(){
+		if(Input.GetMouseButtonUp(0)){
+			ItemCursor.current.ReturnCursor();
+			ItemCursor.current.cursorOnObject = false;
+		}
+	}
     void OnMouseOver()
     {
+		
+
         if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && activatesInfo)
         {
             ItemCursor.current.EnableInfo(itemInfo);
@@ -66,12 +75,14 @@ public class isObject : MonoBehaviour {
     {
         if (ItemCursor.current.mouseState.Equals("Empty"))
         {
-            ItemCursor.current.ChangeCursor();
+			ItemCursor.current.ObjectCursor ();
+			ItemCursor.current.cursorOnObject = true;
         }
     }
-    void OnMouseExit()
+    /*void OnMouseExit()
     {
         ItemCursor.current.ReturnCursor();
-    }
+		ItemCursor.current.cursorOnObject = false;
+    }*/
 
 }

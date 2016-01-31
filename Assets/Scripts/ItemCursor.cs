@@ -14,12 +14,19 @@ public class ItemCursor : MonoBehaviour {
 
 	public static ItemCursor current;
 
-    public Texture2D cursorTexture;
+    public Texture2D cursorObjectTexture;
+	public Texture2D cursorGrabTexture;
+	public Texture2D cursorBasicTexture;
+
+	public Texture2D currentCursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot = Vector2.zero;
+	public Vector2 hotSpot;
     public GameObject infoText;
     public float infoTextDuration;
     private float infoTextDurationCounter;
+
+	private bool grabbing;
+	public bool cursorOnObject;
 
     void Awake(){
 		current = this;
@@ -34,6 +41,11 @@ public class ItemCursor : MonoBehaviour {
 		hoveringObject.GetComponent<SpriteRenderer> ().sortingLayerName = "UI";
         mouseState = "Empty";
 
+		currentCursorTexture = cursorBasicTexture;
+
+		hotSpot = Vector2.zero;
+
+		ReturnCursor ();
     }
 
     void Update()
@@ -52,10 +64,15 @@ public class ItemCursor : MonoBehaviour {
         hoveringObject.transform.position = mousePos;
 
         DropItem();
-        //UseItem();
+        
+		if (currentCursorTexture == cursorObjectTexture && Input.GetMouseButton(0)){
+			print ("lol");
+			GrabCursor ();
+		}
     }
 
     public void HoveringItem(string pname, Sprite psprite, GameObject itemObject, string iMouseState){
+		GrabCursor ();
 		hoveringObject.GetComponent<SpriteRenderer>().sprite = psprite;
 		name = pname;
 		sprite = psprite;
@@ -85,15 +102,17 @@ public class ItemCursor : MonoBehaviour {
         mouseState = "Empty";
     }
 
-    public void ChangeCursor() {
+    public void ObjectCursor() {
         if (ItemCursor.current.mouseState.Equals("Empty"))
         {
-            Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+			currentCursorTexture = cursorObjectTexture;
+            Cursor.SetCursor(cursorObjectTexture, hotSpot, cursorMode);
         }
     }
     public void ReturnCursor()
     {
-        Cursor.SetCursor(null, Vector2.zero, cursorMode);
+		currentCursorTexture = cursorBasicTexture;
+        Cursor.SetCursor(cursorBasicTexture, hotSpot, cursorMode);
     }
 
     public void EnableInfo(string info) {
@@ -101,5 +120,10 @@ public class ItemCursor : MonoBehaviour {
         infoText.GetComponentInChildren<Text>().text = info;
         infoTextDurationCounter = infoTextDuration;
     }
+
+	private void GrabCursor(){
+		currentCursorTexture = cursorGrabTexture;
+		Cursor.SetCursor(cursorGrabTexture, hotSpot, cursorMode);
+	}
 }
 

@@ -2554,7 +2554,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseState: 
-  cursorTexture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+  cursorObjectTexture: {fileID: 2800000, guid: 145ab9c56176b4f9bad1c278462e24dd, type: 3}
+  cursorGrabTexture: {fileID: 2800000, guid: ca9344687d33a43ee8b3068c4213ea94, type: 3}
+  cursorBasicTexture: {fileID: 2800000, guid: a0b0475b337d44e14b06fac763c3482f, type: 3}
+  currentCursorTexture: {fileID: 0}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
   infoText: {fileID: 199512}

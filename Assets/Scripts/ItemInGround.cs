@@ -21,7 +21,7 @@ public class ItemInGround : MonoBehaviour {
     {
         if (ItemCursor.current.mouseState.Equals("Empty"))
         {
-            ItemCursor.current.ChangeCursor();
+            ItemCursor.current.ObjectCursor();
         }
         if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty"))
         {
