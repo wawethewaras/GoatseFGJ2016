@@ -8,19 +8,22 @@ public class CandleLightingGame : MonoBehaviour {
 	public int candlesLit = 0;
 	public List<GameObject> litCandlesList;
 	public List<string> correctCandleOrder;
+    public GameObject sacrificePit;
 
 	void Awake(){
 		current = this;
 		litCandlesList = new List<GameObject> ();
 	}
 
-	public void LightCandle(GameObject candle){
-		print (candle.name);
-		candle.GetComponent<Animator> ().SetBool ("light", true);
-		candlesLit += 1;
-		litCandlesList.Add(candle);
+    public void LightCandle(GameObject candle)
+    {
+        if (!SacrificePuzzle.candlesLit) { 
+            candle.GetComponent<Animator>().SetBool("light", true);
+            candlesLit += 1;
+            litCandlesList.Add(candle);
 
-		CheckOrder ();
+            CheckOrder();
+        }
 	}
 
 	void Suffocate(){
@@ -45,7 +48,9 @@ public class CandleLightingGame : MonoBehaviour {
 
 	void WinPuzzle(){
 		AudioPlayer.current.PlaySoundClip ("applause");
-		SacrificePuzzle.candlesLit = true;
+        sacrificePit.SetActive(true);
+
+        SacrificePuzzle.candlesLit = true;
 	}
 
 

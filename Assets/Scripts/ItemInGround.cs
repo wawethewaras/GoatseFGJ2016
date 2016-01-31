@@ -8,6 +8,7 @@ public class ItemInGround : MonoBehaviour {
     public int weight;
     public bool weightCounted;
     public bool isOnScale;
+    public bool canPickUp;
     InventoryController theInventoryController;
 
     void Start() {
@@ -23,13 +24,10 @@ public class ItemInGround : MonoBehaviour {
         {
             ItemCursor.current.ObjectCursor();
         }
-        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty"))
+        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && canPickUp)
         {
             theInventoryController.AddItem(item);
             Instantiate(particleEffect, transform.position, transform.rotation);
-		    /*ScaleSide[] sides = FindObjectsOfType<ScaleSide> ();
-			sides[0].RemoveObject (gameObject);
-			sides[1].RemoveObject(gameObject);*/
             Destroy(gameObject);
         }
     }

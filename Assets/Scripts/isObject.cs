@@ -35,20 +35,21 @@ public class isObject : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState == itemThatActivates)
     	{
-            ItemCursor.current.RemoveItem();
+            
 
 			if (gameObject.name == "Skull") {
 				DropKey ();
 			}
             if (gameObject.name == "EvilSanta")
             {
+                ItemCursor.current.RemoveItem();
                 OpenDoor();
             }
             if (gameObject.tag == "Goat")
             {
                 //KillGoat();
             }
-            if (gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4") {
+            if (/*gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4"*/gameObject.tag == "Candle") {
 				CandleLightingGame.current.LightCandle (gameObject);
 			}
 
@@ -83,7 +84,7 @@ public class isObject : MonoBehaviour {
     }
 
 	void CutRope(){
-		affectedObject.GetComponent<ItemInGround> ().enabled = true;
+		affectedObject.GetComponent<ItemInGround> ().canPickUp = true;
 		Destroy (gameObject);
 	}
 

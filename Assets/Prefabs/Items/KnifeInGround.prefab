@@ -78,6 +78,7 @@ MonoBehaviour:
   weight: 10
   weightCounted: 0
   isOnScale: 0
+  canPickUp: 1
 --- !u!212 &21275434
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -130,6 +131,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: canPickUp
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

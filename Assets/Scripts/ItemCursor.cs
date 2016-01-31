@@ -66,7 +66,6 @@ public class ItemCursor : MonoBehaviour {
         DropItem();
         
 		if (currentCursorTexture == cursorObjectTexture && Input.GetMouseButton(0)){
-			print ("lol");
 			GrabCursor ();
 		}
     }
@@ -78,11 +77,10 @@ public class ItemCursor : MonoBehaviour {
 		sprite = psprite;
 		objectToDrop = itemObject;
         mouseState = iMouseState;
-        //hoveringType = "item";
     }
 
     void DropItem() {
-        if (Input.GetMouseButtonDown(0)/*Input.GetButtonDown("DropItem")*/ && hoveringObject.GetComponent<SpriteRenderer>().sprite != null && !mouseState.Equals("Empty")/*&& hoveringType == "emp"*/)
+        if (Input.GetMouseButtonDown(0)/*Input.GetButtonDown("DropItem")*/ && hoveringObject.GetComponent<SpriteRenderer>().sprite != null && !mouseState.Equals("Empty"))
         {
 
             GameObject placedObject = (GameObject)Instantiate(objectToDrop, mousePos, Quaternion.identity);
@@ -92,15 +90,13 @@ public class ItemCursor : MonoBehaviour {
             mouseState = "Empty";
 
 			AudioPlayer.current.PlaySoundClip ("dropItem");
-
-			if (hoveringObject.tag == "Goat") {
-				hoveringObject.GetComponent<ItemInGround> ().enabled = true;
-			}
+            placedObject.GetComponent<ItemInGround>().canPickUp = true;
 
         }
     }
     public void RemoveItem()
     {
+        Debug.Log("FSAF");
         hoveringType = null;
         hoveringObject.GetComponent<SpriteRenderer>().sprite = null;
         mouseState = "Empty";

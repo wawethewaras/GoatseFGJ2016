@@ -57,6 +57,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 159614, guid: 535cc070f1de7e044b311db461bed859, type: 2}
   particleEffect: {fileID: 102114, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+  weight: 0
+  weightCounted: 0
+  isOnScale: 0
+  canPickUp: 1
 --- !u!212 &21281064
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -102,6 +106,10 @@ Prefab:
       propertyPath: particleEffect
       value: 
       objectReference: {fileID: 102114, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: canPickUp
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110398}
