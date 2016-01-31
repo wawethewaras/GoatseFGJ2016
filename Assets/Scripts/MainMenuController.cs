@@ -7,11 +7,11 @@ public class MainMenuController : MonoBehaviour {
     public string startLevel;
 
     public void StartGame() {
-        Debug.Log("StartGame");
-        //Application.LoadLevel(startLevel);
+        
+        Application.LoadLevel("test");
     }
     public void QuitGame() {
-        Debug.Log("Quit");
-        //Application.Quit();
+      
+        Application.Quit();
     }
 }

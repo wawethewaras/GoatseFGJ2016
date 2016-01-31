@@ -269,6 +269,7 @@ GameObject:
   - 114: {fileID: 11482938}
   - 114: {fileID: 11477310}
   - 114: {fileID: 11428882}
+  - 114: {fileID: 11416014}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1061,6 +1062,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11416014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2af450337d9ff467688dc6ea16112b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11416152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1249,7 +1261,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 3
+  m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
 --- !u!114 &11428882
@@ -2138,6 +2150,7 @@ MonoBehaviour:
   - candle2
   - candle3
   - candle4
+  sacrificePit: {fileID: 0}
 --- !u!114 &11478076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2193,7 +2206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11462770}
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -3033,7 +3046,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 244, y: -189.7}
+  m_AnchoredPosition: {x: 229, y: -174}
   m_SizeDelta: {x: -488, y: -385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22423996
