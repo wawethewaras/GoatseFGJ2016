@@ -43,7 +43,7 @@ public class ItemCursor : MonoBehaviour {
 
 		currentCursorTexture = cursorBasicTexture;
 
-		hotSpot = Vector2.zero;
+		hotSpot = new Vector2 (0.1f, 0.1f);
 
 		ReturnCursor ();
     }

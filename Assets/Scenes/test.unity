@@ -1013,6 +1013,18 @@ Prefab:
       propertyPath: theRoomSwitcher
       value: 
       objectReference: {fileID: 1902798364}
+    - target: {fileID: 21205136, guid: 554ceb3d0c5e240268a185f8da56a3ba, type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21205136, guid: 554ceb3d0c5e240268a185f8da56a3ba, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21205136, guid: 554ceb3d0c5e240268a185f8da56a3ba, type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 554ceb3d0c5e240268a185f8da56a3ba, type: 2}
   m_IsPrefabParent: 0
