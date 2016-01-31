@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GoatController : MonoBehaviour {
 
     public string itemThatActivates;
     public GameObject sacrificePit;
     public float distance;
+	public Sprite deadGoat;
 
-
-    void Start () {
-	
-	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,7 +27,10 @@ public class GoatController : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState == itemThatActivates && SacrificePuzzle.goatPlaced)
         {
-            Debug.Log("Game over");
+			GetComponent<SpriteRenderer> ().sprite = deadGoat;
+			transform.localRotation = Quaternion.Euler(0, 0, 180f);
+			StartCoroutine ("credits");
+
         }
     }
 
@@ -37,4 +38,9 @@ public class GoatController : MonoBehaviour {
     {
         Debug.Log("Game over");
     }
+
+	IEnumerator credits(){
+		yield return new WaitForSeconds (1.5f);
+		SceneManager.LoadScene ("credits");
+	}
 }

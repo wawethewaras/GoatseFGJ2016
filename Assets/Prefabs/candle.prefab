@@ -73,10 +73,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5894c66cb7f00f34480ce732e8e2ea48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemThatActivates: Empty
+  itemThatActivates: Matches
   affectedObject: {fileID: 0}
-  itemInfo: 
-  activatesInfo: 0
+  itemInfo: A long candle.
+  activatesInfo: 1
   currentRoom: {fileID: 0}
   openRoom: {fileID: 0}
 --- !u!212 &21239472
@@ -115,7 +115,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: itemThatActivates
+      value: Matches
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: itemInfo
+      value: A long candle.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: activatesInfo
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153934}
