@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 120732, guid: 16c197a849d2f415c8b1c1e497d71814, type: 2}
   particleEffect: {fileID: 102114, guid: f026d15e823d8254b86792e18edfa06f, type: 2}
-  weight: 40
+  weight: 20
   weightCounted: 0
   isOnScale: 0
   canPickUp: 1
@@ -123,6 +123,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: canPickUp
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: weight
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
