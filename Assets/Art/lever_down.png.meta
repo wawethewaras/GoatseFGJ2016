@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 1e233331ee7b14367bcb2e4df6269e34
-timeCreated: 1454198015
+timeCreated: 1454198593
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: lever_down_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +39,53 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: lever_down_0
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 628
+        width: 478
+        height: 657
+      alignment: 9
+      pivot: {x: 0.5088381, y: 0.7636427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96.14685, y: -183.44708}
+        - {x: 50.14685, y: -125.44708}
+        - {x: 85.14685, y: -129.44708}
+        - {x: 120.14685, y: -108.44708}
+        - {x: 126.14685, y: -97.44708}
+        - {x: 126.14685, y: 46.552917}
+        - {x: 125.14685, y: 58.552917}
+        - {x: 95.14685, y: 84.55292}
+        - {x: -88.85315, y: 84.55292}
+        - {x: -106.85315, y: 82.55292}
+        - {x: -129.85315, y: 53.552917}
+        - {x: -129.85315, y: -103.44708}
+        - {x: -90.85315, y: -130.44708}
+        - {x: -12.853149, y: -128.44708}
+        - {x: -10.853149, y: -138.44708}
+        - {x: -9.853149, y: -159.44708}
+        - {x: -25.85315, y: -177.44708}
+        - {x: -46.85315, y: -216.44708}
+        - {x: -42.85315, y: -244.44708}
+        - {x: -31.85315, y: -267.44708}
+        - {x: 92.14685, y: -267.44708}
+        - {x: 94.14685, y: -259.44708}
+        - {x: 102.14685, y: -247.44708}
+        - {x: 107.14685, y: -202.44708}
     outline: []
   spritePackingTag: 
   userData: 

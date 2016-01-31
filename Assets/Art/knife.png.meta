@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 24923d870a47043b2ba348250c311092
-timeCreated: 1454193686
+timeCreated: 1454198235
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: knife_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +39,74 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: knife_0
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 903
+        width: 1977
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -180.03326, y: -138.39996}
+        - {x: -161.03326, y: -149.39996}
+        - {x: -144.03326, y: -144.39996}
+        - {x: -138.03326, y: -132.39996}
+        - {x: -97.033264, y: -120.39996}
+        - {x: -59.033264, y: -103.39996}
+        - {x: -9.033264, y: -85.39996}
+        - {x: 22.966736, y: -71.39996}
+        - {x: 62.966736, y: -60.399963}
+        - {x: 148.96674, y: -28.399963}
+        - {x: 235.96674, y: 8.600037}
+        - {x: 292.96674, y: 26.600037}
+        - {x: 331.96674, y: 42.600037}
+        - {x: 420.96674, y: 91.60004}
+        - {x: 458.96674, y: 124.60004}
+        - {x: 481.96674, y: 147.60004}
+        - {x: 509.96674, y: 197.60004}
+        - {x: 527.96674, y: 232.60004}
+        - {x: 527.96674, y: 243.60004}
+        - {x: 519.96674, y: 243.60004}
+        - {x: 463.96674, y: 222.60004}
+        - {x: 337.96674, y: 173.60004}
+        - {x: 305.96674, y: 157.60004}
+        - {x: 210.96674, y: 129.60004}
+        - {x: 136.96674, y: 100.60004}
+        - {x: 41.966736, y: 60.600037}
+        - {x: -56.033264, y: 21.600037}
+        - {x: -195.03326, y: -32.399963}
+        - {x: -204.03326, y: -22.399963}
+        - {x: -218.03326, y: -18.399963}
+        - {x: -227.03326, y: -36.399963}
+        - {x: -222.03326, y: -45.399963}
+        - {x: -259.03326, y: -54.399963}
+        - {x: -302.03326, y: -71.39996}
+        - {x: -381.03326, y: -96.39996}
+        - {x: -468.03326, y: -122.39996}
+        - {x: -521.03326, y: -142.39996}
+        - {x: -527.03326, y: -148.39996}
+        - {x: -527.03326, y: -162.39996}
+        - {x: -507.03326, y: -194.39996}
+        - {x: -484.03326, y: -242.39996}
+        - {x: -476.03326, y: -242.39996}
+        - {x: -417.03326, y: -223.39996}
+        - {x: -348.03326, y: -195.39996}
+        - {x: -261.03326, y: -167.39996}
     outline: []
   spritePackingTag: 
   userData: 

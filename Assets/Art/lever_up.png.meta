@@ -1,9 +1,10 @@
 fileFormatVersion: 2
 guid: 008145f08c6c44347a67afb5eec3b6e6
-timeCreated: 1454198011
+timeCreated: 1454198604
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: lever_up_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,18 +39,54 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: lever_up_0
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 895
+        width: 478
+        height: 707
+      alignment: 9
+      pivot: {x: 0.5095981, y: 0.29883727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 101.953125, y: 98.18515}
+        - {x: 46.953125, y: 103.18515}
+        - {x: 53.953125, y: 179.18515}
+        - {x: 90.953125, y: 181.18515}
+        - {x: 103.953125, y: 202.18515}
+        - {x: 98.953125, y: 245.18515}
+        - {x: 87.953125, y: 262.18515}
+        - {x: 69.953125, y: 265.18515}
+        - {x: -29.046875, y: 265.18515}
+        - {x: -42.046875, y: 252.18515}
+        - {x: -50.046875, y: 212.18515}
+        - {x: -31.046875, y: 176.18515}
+        - {x: -10.046875, y: 176.18515}
+        - {x: -22.046875, y: 98.18515}
+        - {x: -93.046875, y: 96.18515}
+        - {x: -105.046875, y: 90.18515}
+        - {x: -121.046875, y: 77.18515}
+        - {x: -130.04688, y: 60.18515}
+        - {x: -130.04688, y: -73.81485}
+        - {x: -125.046875, y: -88.81485}
+        - {x: -107.046875, y: -107.81485}
+        - {x: -94.046875, y: -112.81485}
+        - {x: 95.953125, y: -112.81485}
+        - {x: 125.953125, y: -91.81485}
+        - {x: 125.953125, y: 68.18515}
     outline: []
   spritePackingTag: 
   userData: 
