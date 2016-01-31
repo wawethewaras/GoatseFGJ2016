@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 0bdd5d1c52da84596b0eb81343124e6c
+timeCreated: 1454227140
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: goatSS_0
+    21300002: goatSS_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: goatSS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1200
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 225.79999, y: -26.864014}
+        - {x: 176.79999, y: 37.135986}
+        - {x: 109.79999, y: 51.135986}
+        - {x: -41.200012, y: 83.13599}
+        - {x: -97.20001, y: 173.13599}
+        - {x: -37.200012, y: 185.13599}
+        - {x: -40.200012, y: 195.13599}
+        - {x: -74.20001, y: 214.13599}
+        - {x: -80.20001, y: 214.13599}
+        - {x: -127.20001, y: 211.13599}
+        - {x: -183.20001, y: 214.13599}
+        - {x: -249.20001, y: 214.13599}
+        - {x: -249.20001, y: 201.13599}
+        - {x: -246.20001, y: 199.13599}
+        - {x: -234.20001, y: 146.13599}
+        - {x: -249.20001, y: 85.13599}
+        - {x: -249.20001, y: 40.135986}
+        - {x: -244.20001, y: 1.1359863}
+        - {x: -209.20001, y: -0.8640137}
+        - {x: -137.20001, y: 61.135986}
+        - {x: -121.20001, y: -72.86401}
+        - {x: -102.20001, y: -180.86401}
+        - {x: -96.20001, y: -203.86401}
+        - {x: -79.20001, y: -200.86401}
+        - {x: -63.200012, y: -186.86401}
+        - {x: -65.20001, y: -192.86401}
+        - {x: -52.200012, y: -207.86401}
+        - {x: -30.200012, y: -189.86401}
+        - {x: -14.200012, y: -127.86401}
+        - {x: 97.79999, y: -133.86401}
+        - {x: 106.79999, y: -193.86401}
+        - {x: 108.79999, y: -207.86401}
+        - {x: 166.79999, y: -207.86401}
+        - {x: 171.79999, y: -202.86401}
+        - {x: 191.79999, y: -112.86401}
+        - {x: 225.79999, y: -62.864014}
+    - name: goatSS_1
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 0
+        width: 1200
+        height: 1080
+      alignment: 9
+      pivot: {x: 0.3, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 226.73993, y: 46.135986}
+        - {x: 214.73993, y: 50.135986}
+        - {x: 112.73993, y: 50.135986}
+        - {x: -24.26007, y: 64.13599}
+        - {x: -94.26007, y: 172.13599}
+        - {x: -34.26007, y: 185.13599}
+        - {x: -37.26007, y: 195.13599}
+        - {x: -71.26007, y: 214.13599}
+        - {x: -77.26007, y: 214.13599}
+        - {x: -124.26007, y: 211.13599}
+        - {x: -180.26007, y: 214.13599}
+        - {x: -246.26007, y: 214.13599}
+        - {x: -246.26007, y: 201.13599}
+        - {x: -243.26007, y: 199.13599}
+        - {x: -185.26007, y: 170.13599}
+        - {x: -233.26007, y: 146.13599}
+        - {x: -246.26007, y: 87.13599}
+        - {x: -246.26007, y: 40.135986}
+        - {x: -241.26007, y: 1.1359863}
+        - {x: -206.26007, y: -0.8640137}
+        - {x: -134.26007, y: 61.135986}
+        - {x: -118.26007, y: -72.86401}
+        - {x: -99.26007, y: -180.86401}
+        - {x: -93.26007, y: -203.86401}
+        - {x: -76.26007, y: -200.86401}
+        - {x: -60.26007, y: -186.86401}
+        - {x: -62.26007, y: -192.86401}
+        - {x: -49.26007, y: -207.86401}
+        - {x: -27.26007, y: -189.86401}
+        - {x: -11.260071, y: -127.86401}
+        - {x: 100.73993, y: -133.86401}
+        - {x: 109.73993, y: -193.86401}
+        - {x: 111.73993, y: -207.86401}
+        - {x: 169.73993, y: -207.86401}
+        - {x: 174.73993, y: -202.86401}
+        - {x: 226.73993, y: 31.135986}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

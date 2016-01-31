@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21213234}
   - 114: {fileID: 11444620}
   - 61: {fileID: 6141366}
-  - 114: {fileID: 11452560}
+  - 95: {fileID: 9593036}
   m_Layer: 0
   m_Name: GoatInGround
   m_TagString: Goat
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4438734, y: -9.544016, z: 0}
+  m_LocalPosition: {x: -102.05, y: -2.76, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,13 +45,30 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 5.51, y: 4.88}
+--- !u!95 &9593036
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d75a30966cf1b415fba74c5438dcb5bc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11444620
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9f92e2a78542fd4abe58a65a56880b7, type: 3}
   m_Name: 
@@ -61,23 +78,6 @@ MonoBehaviour:
   weight: 0
   weightCounted: 0
   isOnScale: 0
---- !u!114 &11452560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5894c66cb7f00f34480ce732e8e2ea48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemThatActivates: Knife
-  affectedObject: {fileID: 0}
-  itemInfo: 
-  activatesInfo: 0
-  currentRoom: {fileID: 0}
-  openRoom: {fileID: 0}
 --- !u!212 &21213234
 SpriteRenderer:
   m_ObjectHideFlags: 1

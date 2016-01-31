@@ -45,6 +45,7 @@ public class CandleLightingGame : MonoBehaviour {
 
 	void WinPuzzle(){
 		AudioPlayer.current.PlaySoundClip ("applause");
+		SacrificePuzzle.candlesLit = true;
 	}
 
 

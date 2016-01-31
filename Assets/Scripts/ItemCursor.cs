@@ -93,6 +93,10 @@ public class ItemCursor : MonoBehaviour {
 
 			AudioPlayer.current.PlaySoundClip ("dropItem");
 
+			if (hoveringObject.tag == "Goat") {
+				hoveringObject.GetComponent<ItemInGround> ().enabled = true;
+			}
+
         }
     }
     public void RemoveItem()
@@ -109,6 +113,7 @@ public class ItemCursor : MonoBehaviour {
             Cursor.SetCursor(cursorObjectTexture, hotSpot, cursorMode);
         }
     }
+
     public void ReturnCursor()
     {
 		currentCursorTexture = cursorBasicTexture;

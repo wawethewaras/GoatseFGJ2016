@@ -46,10 +46,20 @@ public class isObject : MonoBehaviour {
             }
             if (gameObject.tag == "Goat")
             {
-                KillGoat();
+                //KillGoat();
             }
             if (gameObject.name == "candle" || gameObject.name == "candle1" || gameObject.name == "candle2" || gameObject.name == "candle3" || gameObject.name == "candle4") {
 				CandleLightingGame.current.LightCandle (gameObject);
+			}
+
+			if (gameObject.name == "Rope") {
+				print ("cutrope");
+				CutRope ();
+			}
+
+			if (gameObject.name == "SacrificeCircle") {
+				SacrificePuzzle.goatPlaced = true;
+				print ("goatplaced");
 			}
         }
     }
@@ -71,6 +81,12 @@ public class isObject : MonoBehaviour {
     void KillGoat() {
         Debug.Log("Game over");
     }
+
+	void CutRope(){
+		affectedObject.GetComponent<ItemInGround> ().enabled = true;
+		Destroy (gameObject);
+	}
+
     void OnMouseEnter()
     {
         if (ItemCursor.current.mouseState.Equals("Empty"))
@@ -79,10 +95,12 @@ public class isObject : MonoBehaviour {
 			ItemCursor.current.cursorOnObject = true;
         }
     }
-    /*void OnMouseExit()
+    void OnMouseExit()
     {
-        ItemCursor.current.ReturnCursor();
-		ItemCursor.current.cursorOnObject = false;
-    }*/
+		if (!Input.GetMouseButton (0)) {
+			ItemCursor.current.ReturnCursor ();
+			ItemCursor.current.cursorOnObject = false;
+		}
+    }
 
 }
