@@ -74,14 +74,27 @@ public class InventoryController : MonoBehaviour {
 
     public void ChangeItem()
     {
-        if (Input.GetButtonDown("ChangeItem"))
+		if (Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
-			currentItem++;
+			print ("lol");
+			currentItem--;
             if (currentItem >= theInventory.Count)
             {
-                currentItem = 0;
+				currentItem = theInventory.Count - 1;
             }
 
-        }
+        }/*else if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+		{
+			print ("gayy");
+			currentItem -= 1;
+			print (currentItem + " " + theInventory.Count);
+
+			if (currentItem <= theInventory.Count)
+			{
+				currentItem = theInventory.Count - 1;
+			}
+
+		}*/
+		
     }
 }
