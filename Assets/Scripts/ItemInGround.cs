@@ -24,11 +24,15 @@ public class ItemInGround : MonoBehaviour {
         {
             ItemCursor.current.ObjectCursor();
         }
-        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && canPickUp)
+        if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && canPickUp && theInventoryController.theInventory.Count < 4)
         {
             theInventoryController.AddItem(item);
             Instantiate(particleEffect, transform.position, transform.rotation);
             Destroy(gameObject);
+        }
+        else if (Input.GetMouseButtonDown(0) && ItemCursor.current.mouseState.Equals("Empty") && canPickUp && theInventoryController.theInventory.Count >= 4)
+        {
+            ItemCursor.current.StartCoroutine("EnableInfo", "Inventory is full!");
         }
     }
 

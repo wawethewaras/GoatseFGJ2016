@@ -58,10 +58,6 @@ public class InventoryController : MonoBehaviour {
         {
             Destroy(inventoryUIitems[currentItem].gameObject);
 			inventoryUIitems.RemoveAt (currentItem);
-            /*
-            Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            Vector2 objectPos = Camera.main.ScreenToWorldPoint(mousePosition);*/
-
 			ItemCursor.current.HoveringItem(theInventory [currentItem].GetComponent<isItem> ().gameObject.name, theInventory [currentItem].GetComponent<isItem> ().itemImage, theInventory [currentItem].GetComponent<isItem>().itemInGround, theInventory[currentItem].GetComponent<isItem>().mouseState);
 
 			theInventory.RemoveAt(currentItem);
@@ -74,27 +70,25 @@ public class InventoryController : MonoBehaviour {
 
     public void ChangeItem()
     {
-		if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+		if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
-			print ("lol");
-			currentItem--;
+			currentItem++;
             if (currentItem >= theInventory.Count)
             {
-				currentItem = theInventory.Count - 1;
+				currentItem = 0;
             }
 
-        }/*else if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        }if (Input.GetAxis("Mouse ScrollWheel") < 0f)
 		{
-			print ("gayy");
-			currentItem -= 1;
-			print (currentItem + " " + theInventory.Count);
 
-			if (currentItem <= theInventory.Count)
+			currentItem--;
+
+			if (currentItem < 0)
 			{
-				currentItem = theInventory.Count - 1;
+				currentItem = theInventory.Count-1;
 			}
 
-		}*/
+		}
 		
     }
 }
